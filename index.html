@@ -1,0 +1,509 @@
+<?php 
+$host = "https://gotutorials.in";
+?>
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>Go Tutorials</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Place favicon.ico in the root directory -->
+   <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+
+   <!-- CSS here  -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <link rel="stylesheet" href="<?=$host;?>/assets/css/meanmenu.css">
+   <link rel="stylesheet" href="<?=$host;?>/assets/css/animate.css">
+   <link rel="stylesheet" href="<?=$host;?>/assets/css/slick.css">
+   <link rel="stylesheet" href="<?=$host;?>/assets/css/magnific-popup.css">
+   <link rel="stylesheet" href="<?=$host;?>/assets/css/nice-select.css">
+ 
+   <script src="https://kit.fontawesome.com/40557bfa75.js" crossorigin="anonymous"></script>
+   
+   <link rel="stylesheet" href="<?=$host;?>/assets/css/elegent-icons.css">
+   <link rel="stylesheet" href="<?=$host;?>/assets/css/spacing.css">
+   <link rel="stylesheet" href="<?=$host;?>/assets/css/main.css">
+   <!-- css end  here-->
+   <style>
+   .tp-feature__icon { margin-bottom: 10px !important;}
+   .img-height{ height: 100px !important;}
+   .h-75 { height: 75px !important;}
+
+   </style>
+</head>
+
+<body>
+
+
+    <!-- back to top start -->
+    <button class="tp-backtotop">
+      <span><i class="fa-solid fa-angles-up"></i></span>
+   </button>
+   <!-- back to top end -->
+ 
+ 
+   <!-- header area start -->
+   <header>
+      <div class="tp-header__area tp-header__transparent">
+         <div class="tp-header__main" id="header-sticky">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-6">
+                     <div class="logo has-border">
+                        <a href="index.html">
+                           <img src="<?=$host;?>/assets/img/logo/go-logo.png" alt="logo" >
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-xxl-8 col-xl-8 col-lg-8 d-none d-lg-block">
+                     <div class="main-menu">
+                        <nav id="mobile-menu">
+                           <ul>
+                              <li class="has-dropdown">
+                                 <a href="index">Languages</a>
+                                 <ul class="submenu">
+                                    <li><a href="/Golang">Golang</a></li>
+                                    <li><a href="/PHP">PHP</a></li>
+                                 </ul>
+                              </li>
+                              
+                              <li class="has-dropdown">
+                                 <a href="Web Technologies">Web Technologies</a>
+                                 <ul class="submenu">
+<li><a href="/HTML">HTML</a></li>
+<li><a href="/CSS">CSS</a></li>
+<li><a href="/JavaScript">JavaScript</a></li>
+<li><a href="/TypeScript">TypeScript</a></li>
+<li><a href="/ReactJS">ReactJS</a></li>
+<li><a href="/NextJS">NextJS</a></li>
+<li><a href="/NodeJs">NodeJs</a></li>
+<li><a href="/Bootstrap">Bootstrap</a></li>
+
+                                 </ul>
+                              </li>
+                              <li class="has-dropdown">
+                                 <a href="#">DevOps</a>
+                                 <ul class="submenu">
+                                    <li><a href="/Git">Git</a></li>
+                                    <li><a href="/AWS">AWS</a></li>
+                                    <li><a href="/Docker">Docker</a></li>
+                                    <li><a href="/Kubernetes">Kubernetes</a></li>
+                                    <li><a href="/Azure">Azure</a></li>
+                                    <li><a href="/GCP">GCP</a></li>
+                                    
+                                 </ul>
+                              </li>
+                              <li class="has-dropdown">
+                                 <a href="">Databases</a>
+                                 <ul class="submenu">
+                                    <li><a href="/SQL/">SQL</a></li>
+                                    <li><a href="/MYSQL/">MYSQL</a></li>
+									<li><a href="/PostgreSQL/">PostgreSQL</a></li>
+                                    <li><a href="/MongoDB/">MongoDB</a></li>
+									<li><a href="/PLSQL/">PL/SQL</a></li>
+                                 </ul>
+                              </li>
+							  <li class="has-dropdown">
+                                 <a href="">Databases</a>
+                                 <ul class="submenu">
+                                    <li><a href="/SQL/">SQL</a></li>
+                                    <li><a href="/MYSQL/">MYSQL</a></li>
+									<li><a href="/PostgreSQL/">PostgreSQL</a></li>
+                                    <li><a href="/MongoDB/">MongoDB</a></li>
+									<li><a href="/PLSQL/">PL/SQL</a></li>
+                                 </ul>
+                              </li>
+							  
+							  
+                              
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+                  <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-6">
+                     <div class="tp-header__main-right d-flex justify-content-end align-items-center pl-30">
+                        <div class="header-acttion-btns d-flex align-items-center d-none d-md-flex"></a>
+                           <a href="/Interviews-Questions/" class="tp-btn br-0">
+                              <span>Interviews<i class="fa-solid fa-arrow-right"></i> </span>
+                              <div class="transition"></div>
+                           </a>
+                        </div>
+                        <div class="tp-header__hamburger ml-50 d-lg-none">
+                           <button class="hamburger-btn offcanvas-open-btn">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- header area end -->
+
+   <!-- offcanvas area start -->
+   <div class="offcanvas__area" >
+      <div class="offcanvas__wrapper">
+         <div class="offcanvas__content">
+            <div class="offcanvas__close text-end">
+               <button class="offcanvas__close-btn offcanvas-close-btn">
+                  <i class="fal fa-times"></i>
+               </button>
+            </div>
+            <div class="offcanvas__top mb-40">
+               <div class="offcanvas__subtitle">
+                  <span class="text-white d-inline-block mb-25 d-none d-lg-block">ELEVATE YOUR BUSINESS WITH</span>
+               </div>
+               <div class="offcanvas__logo mb-40">
+                  <a href="index-2.html">
+                     <img src="<?=$host;?>/assets/img/logo/go-logo.png" alt="logo">
+                  </a>
+               </div>
+               <div class="offcanvas-info d-none d-lg-block">
+                  <p>Limitless customization options & Elementor compatibility let anyone create a beautiful website
+                     with Valiance. </p>
+               </div>
+               <div class="offcanvas__btn d-none d-lg-block">
+                  <a href="contact.html" class="tp-btn">Contact us <span></span></a>
+               </div>
+            </div>
+            <div class="mobile-menu fix mb-40"></div>
+
+
+            <div class="offcamvas__bottom">
+               <div class="offcanvas__cta mt-30 mb-20">
+                  <h3 class="offcanvas__cta-title">Contact info</h3>
+                  <span>27 Division St, New York,</span>
+                  <span>+154 4808 84082 4830</span>
+                  <span><a href="#" class="__cf_email__" data-cfemail="63101613130c1117230d0c1b0a024d000c0e">[email&#160;protected]</a></span>
+                  <span>Office Hours: 8AM - 5PM</span>
+                  <span>Sunday - Wekend Day</span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="body-overlay"></div>
+   <!-- offcanvas area end -->
+
+   <main>
+      
+      <!-- hero section  -->
+      <div class="tp-hero__section pt-130 theme-bg p-relative fix">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-9">
+                  <div class="tp-hero__content pt-40">
+                     <span class="tp-hero__subtitle text-white mb-10">Education Goal</span>
+                     <h3 class="tp-hero__title text-white mb-15" style="font-size: 50px !important;">Free online Tutorials</h3>
+                     <div class="tp-hero__btn-wrappper d-md-flex align-items-center">
+                        <div class="hero-btn-1 mr-20 p-relative z-index-1">
+						<?php /*?>
+                           <a href="course.html" class="tp-btn br-0">
+                              <span>Explore Coureses</span>
+                              <div class="transition"></div>
+                           </a>
+						   <?php */?>
+                        </div>
+                        <div class="hero-btn-2">
+						   <?php /*?>
+                           <a href="#"
+                              class="tp-play-btn d-flex align-items-center popup-video">
+
+                              <i class="arrow_triangle-right"></i>
+                              <span>Watch it Now</span>
+                           </a>
+						   <?php */?>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+			   <div class="col-lg-3">
+			   <img src="<?=$host;?>/assets/img/icons/golang.png" alt="">
+			   </div>
+               
+            </div>
+         </div>
+         <div class="tp-hero__shapes">
+            <div class="tp-hero__shapes-1">
+               <img src="<?=$host;?>/assets/img/icons/html.png" style="max-height:50px;" alt="HTML">
+            </div>
+            <div class="tp-hero__shapes-2">
+               <img src="<?=$host;?>/assets/img/icons/docker.png" style="max-height:60px;" alt="Docker">
+            </div>
+            <div class="tp-hero__shapes-3">
+               <img src="<?=$host;?>/assets/img/icons/php.png" alt="PHP">
+            </div>
+            <div class="tp-hero__shapes-4">
+               <img src="<?=$host;?>/assets/img/icons/footer-up-bg.png" alt="">
+            </div>
+            <div class="tp-hero__shapes-5">
+               <img src="<?=$host;?>/assets/img/icons/lines-shape.png" alt="">
+            </div>
+            <div class="tp-hero__shapes-6">
+               <img src="<?=$host;?>/assets/img/icons/kubernetes.png" style="max-height:40px;" alt="kubernetes">
+            </div>
+         </div>
+      </div>
+      <!-- hero section end  -->
+
+
+     
+
+      <!-- service area start  -->
+      <div class="tp-feature__section pt-120 pb-30">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="tp-section__title-wrapper text-center mb-40">
+                     <h3 class="tp-section__title">Start Learning</h3>
+                  </div>
+               </div>
+            </div>
+            <div class="row gx-70">
+               <div class="col-lg-3 col-md-4">
+                  <div class="tp-feature__item before-color-1 mb-30">
+                     <div class="tp-feature__icon">
+                        <img src="<?=$host;?>/assets/img/icons/golang.png" class="img-height" alt="golang">
+                     </div>
+                     <h3 class="tp-feature__title"><a href="/golang" class="btn btn-outline-primary">Golang</a></h3>
+                    
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-4">
+                  <div class="tp-feature__item before-color-2 mb-40">
+                     <div class="tp-feature__icon">
+                        <img src="<?=$host;?>/assets/img/icons/php.png" class="img-height" alt="php">
+                     </div>
+                     <h3 class="tp-feature__title"><a href="/PHP" class="btn btn-outline-primary">PHP</a> </h3>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-4">
+                  <div class="tp-feature__item before-color-3 mb-40">
+                     <div class="tp-feature__icon">
+                        <img src="<?=$host;?>/assets/img/icons/docker.png" class="img-height" alt="docker">
+                     </div>
+                     <h3 class="tp-feature__title"><a href="/docker" class="btn btn-outline-primary">Docker</a></h3>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-4">
+                  <div class="tp-feature__item before-color-4 mb-40">
+                     <div class="tp-feature__icon">
+                        <img src="<?=$host;?>/assets/img/icons/kubernetes.png" class="img-height" alt="kubernetes">
+                     </div>
+                     <h3 class="tp-feature__title"><a href="/kubernetes" class="btn btn-outline-primary">kubernetes</a></h3>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-4">
+                  <div class="tp-feature__item before-color-5 mb-40">
+                     <div class="tp-feature__icon">
+                        <img src="<?=$host;?>/assets/img/icons/mongodb.png" class="img-height" alt="MongoDB">
+                     </div>
+                     <h3 class="tp-feature__title"><a href="/MongoDB" class="btn btn-outline-primary"> MongoDB</a></h3>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-4">
+                  <div class="tp-feature__item before-color-6 mb-40">
+                     <div class="tp-feature__icon">
+                        <img src="<?=$host;?>/assets/img/icons/postgresql.png" class="img-height" alt="postgresql">
+                     </div>
+                     <h3 class="tp-feature__title"><a href="/PostgreSql" class="btn btn-outline-primary">PostgreSql</a></h3>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-4">
+                  <div class="tp-feature__item before-color-7 mb-40">
+                     <div class="tp-feature__icon">
+                        <img src="<?=$host;?>/assets/img/icons/mysql.png" class="img-height" alt="mysql">
+                     </div>
+                     <h3 class="tp-feature__title"><a href="/MySql" class="btn btn-outline-primary">MySql</a> </h3>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-4">
+                  <div class="tp-feature__item before-color-8 mb-40">
+                     <div class="tp-feature__icon">
+                        <img src="<?=$host;?>/assets/img/icons/sql.png" class="img-height" alt="sql">
+                     </div>
+                     <h3 class="tp-feature__title"><a href="/SQL" class="btn btn-outline-primary">SQL</a></h3>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- service area end  -->
+
+   
+
+           <!-- event start-->
+       <div class="tp-event-3__section pt-40 pb-120 p-relative fix">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="tp-section__title-wrapper text-center mb-60">
+                     <h3 class="tp-section__title mb-15">View By Topics</h3>
+                  </div>
+               </div>
+            </div>
+            <div class="tp-event-3__wrapper">
+               <div class="row align-items-center">
+                  
+                 <?php for ($x = 1; $x <= 18; $x++) { ?>
+                  
+                  
+                  <div class="col-lg-4">
+                     <div class="tp-event-3__item mb-30">
+                        <div class="tp-about__feature-list mb-40">
+		<ul>
+		   <li><span><i class="fa-solid fa-circle-right"></i></span>Upskill your</li>
+		   <li><span><i class="fa-solid fa-circle-right"></i>Access more then</li>
+		   <li><span><i class="fa-solid fa-circle-right"></i></span>Access more then</li>
+		   <li><span><i class="fa-solid fa-circle-right"></i>Access more then</li>
+		   <li><span><i class="fa-solid fa-circle-right"></i></span>Access more then</li>
+		</ul>
+                     </div>
+                     </div>
+                  </div>
+                  
+                <?php } ?>  
+                  
+				  
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- evant end -->
+
+     
+<?php /*?>
+      <!-- team start  -->
+      <div class="tp-team__section pb-130">
+         <div class="container">
+            <div class="row">
+               <div class="tp-section__title-wrapper mb-40 text-center">
+                  <h3 class="tp-section__title mb-15">Become A Instruction <br>
+                     Instructor.</h3>
+                  <p>Etiam porttitor risus massa nec condiment gravida.</p>
+               </div>
+            </div>
+            <div class="tp-team__wrapper mb-30">
+               <div class="row">
+                  <div class="col-lg-3 col-md-6">
+                     <div class="tp-team__member fix mb-30">
+                        <div class="tp-team__img w-img tp-team__overlay p-relative">
+                           <a href="instructor-details.html">
+                              <img src="<?=$host;?>/assets/img/team/team-1.1.jpg" alt="">
+                           </a>
+                           <div class="tp-team__info text-center">
+                              <h3 class="tp-team__name">Andra Flatcher</h3>
+                              <span>Teacher MBA</span>
+                           </div>
+                           <div class="tp-team__social">
+                              <span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+                              <span><a href="#"><i class="fab fa-youtube"></i></a></span>
+                              <span><a href="#"><i class="fab fa-linkedin"></i></a></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                     <div class="tp-team__member fix mb-30">
+                        <div class="tp-team__img w-img tp-team__overlay p-relative">
+                           <a href="instructor-details.html">
+                           <img src="<?=$host;?>/assets/img/team/team-1.2.jpg" alt="">
+                           </a>
+                           <div class="tp-team__info text-center">
+                              <h3 class="tp-team__name">Morgan Key</h3>
+                              <span>Teacher MBA</span>
+                           </div>
+                           <div class="tp-team__social">
+                              <span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+                              <span><a href="#"><i class="fab fa-youtube"></i></a></span>
+                              <span><a href="#"><i class="fab fa-linkedin"></i></a></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                     <div class="tp-team__member fix mb-30">
+                        <div class="tp-team__img w-img tp-team__overlay p-relative">
+                           <a href="instructor-details.html">
+                           <img src="<?=$host;?>/assets/img/team/team-1.3.jpg" alt="">
+                           </a>
+                           <div class="tp-team__info text-center">
+                              <h3 class="tp-team__name">Andra Flatcher</h3>
+                              <span>Course Mentor</span>
+                           </div>
+                           <div class="tp-team__social">
+                              <span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+                              <span><a href="#"><i class="fab fa-youtube"></i></a></span>
+                              <span><a href="#"><i class="fab fa-linkedin"></i></a></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                     <div class="tp-team__member fix mb-30">
+                        <div class="tp-team__img w-img tp-team__overlay p-relative">
+                           <a href="instructor-details.html">
+                           <img src="<?=$host;?>/assets/img/team/team-1.4.jpg" alt="">
+                           </a>
+                           <div class="tp-team__info text-center">
+                              <h3 class="tp-team__name">Andra Flatcher</h3>
+                              <span>Teacher MBA</span>
+                           </div>
+                           <div class="tp-team__social">
+                              <span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+                              <span><a href="#"><i class="fab fa-youtube"></i></a></span>
+                              <span><a href="#"><i class="fab fa-linkedin"></i></a></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="tp-hero__btn-wrappper text-center">
+                     <a href="instructor-2.html" class="tp-border-btn br-0">
+                        <span>See all Team</span>
+                        <div class="transition"></div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- team end  -->
+<?php */?>
+ 
+
+   </main>
+
+<?php include "footer.html";?>
+
+   <!-- JS here -->
+   <script src="assets/js/vendor/jquery.js"></script>
+   <script src="<?=$host;?>/assets/js/vendor/waypoints.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+   <script src="<?=$host;?>/assets/js/meanmenu.js"></script>
+   <script src="<?=$host;?>/assets/js/slick.js"></script>
+   <script src="<?=$host;?>/assets/js/magnific-popup.js"></script>
+   <script src="<?=$host;?>/assets/js/parallax.js"></script>
+   <script src="<?=$host;?>/assets/js/nice-select.js"></script>
+   <script src="<?=$host;?>/assets/js/counterup.js"></script>
+   <script src="<?=$host;?>/assets/js/wow.js"></script>
+   <script src="<?=$host;?>/assets/js/isotope-pkgd.js"></script>
+   <script src="<?=$host;?>/assets/js/imagesloaded-pkgd.js"></script>
+   <script src="<?=$host;?>/assets/js/ajax-form.js"></script> 
+   <script src="assets/js/countdown.js"></script>
+   <script src="<?=$host;?>/assets/js/main.js"></script>
+</body>
+
+</html>
