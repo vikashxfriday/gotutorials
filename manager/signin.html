@@ -1,0 +1,147 @@
+<?php include "include/common.php"; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Admin Dashboard - <?=$host_company;?></title>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+<meta name="description" content="Admin Dashboard - <?=$host_company;?>">
+<meta name="author" content="<?=$host_company;?>">
+<meta name="keywords" content="Admin Dashboard - <?=$host_company;?>">
+<?php include "include/meta-css.php"; ?>
+</head>
+<body class="ltr main-body leftmenu error-1">
+<!-- SWITCHER -->
+<!-- END SWITCHER -->
+
+<!-- END PAGE -->
+<div class="page main-signin-wrapper">
+  <!-- Row -->
+  <div class="row signpages text-center">
+    <div class="col-md-12">
+	<?php if(isset($_SESSION['log-out'])&&$_SESSION['log-out']){ ?>
+	<div class="alert alert-solid-success mx-0" role="alert" id="loutmsg" >
+	<button aria-label="Close" class="btn-close" data-bs-dismiss="alert" type="button">
+	<span aria-hidden="true">&times;</span></button>
+	<strong><i class="fa-regular fa-circle-check fa-xl pe-2"></i></strong> You have successfully logged out of this account.
+</div>
+    <?php $_SESSION['log-out']=""; } ?>
+	
+	<div class="alert alert-solid-danger mx-0" role="alert" id="wrongmsg" style="display:none">
+	<button aria-label="Close" class="btn-close" data-bs-dismiss="alert" type="button">
+	<span aria-hidden="true">&times;</span></button>
+	<strong><i class="fa-regular fa-circle-xmark"></i></strong> <span id="actmsg"></span>
+</div>
+
+
+      <div class="card">
+        <div class="row row-sm">
+          <div class="col-lg-6 col-xl-5 d-none d-lg-block text-center bg-primary details">
+            <div class="mt-5 pt-4 p-2 pos-absolute"> <img 55 src="<?=$host_path;?>assets/img/admin-logo.png" class="header-brand-img mb-4" alt="logo" style="height:40px !important;">
+              <div class="clearfix"></div>
+              <img 56 src="<?=$host_path;?>assets/img/user.png" class="ht-100 mb-0" alt="user">
+              <h5 class="mt-4 text-white">Welcome to <?=$host_company;?> Web Manager</h5>
+              <span class="tx-white-6 tx-13 mb-5 mt-xl-0">For Support Email us -  <a href="mailto:<?=$host_email;?>" class="text-white"><?=$host_email;?></a></span> </div>
+			  
+          </div>
+          <div class="col-lg-6 col-xl-7 col-xs-12 col-sm-12 login_form ">
+            <div class="main-container container-fluid">
+              <div class="row row-sm">
+                <div class="card-body mt-2 mb-2"> <img 57 src="<?=$host_path;?>assets/img/admin-logo.png" class="d-lg-none header-brand-img text-start float-start mb-4 error-logo-light" alt="logo"> <img 58 src="<?=$host_path;?>assets/img/admin-logo-dark.png" class=" d-lg-none header-brand-img text-start float-start mb-4 error-logo" alt="logo" 
+				style="height: 50px;">
+                  <div class="clearfix"></div>
+                 
+                    <h5 class="text-start mb-2">Signin to Your Account</h5>
+                    <p class="mb-4 text-muted tx-13 ms-0 text-center" id="loader">&nbsp;&nbsp;</p>
+                    <div class="form-group text-start">
+                      <label>User Name</label>
+             <input name="admin_user" id="admin_user" class="form-control" placeholder="Enter your User Name" type="text" title="User Name" required>
+                    </div>
+                    <div class="form-group text-start">
+                      <label>Password</label>
+             <input name="admin_pass"  id="admin_pass" class="form-control" placeholder="Enter your password" type="password" title="Password" required>
+                    </div>
+                    <button type="submit" id="submit_signin" class="btn btn-main-primary btn-block text-white">Sign In</button>
+                    <a class="btn btn-primary submit_enquiry_msg" style="display:none;"></a>
+                  <div class=" mt-5 ms-0">
+				   <div class="mb-1 float-start text-start w-50">Not Member? <a href="signup.html">Sign Up</a></div>
+                    <div class="mb-1 float-end text-end w-50"><a href="forgot.html">Forgot password?</a></div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Row -->
+</div>
+<!-- END PAGE -->
+<!-- SCRIPTS -->
+<!-- JQUERY JS -->
+<script src="<?=$host_path;?>assets/plugins/jquery/jquery.min.js"></script>
+<!-- BOOTSTRAP JS -->
+<script src="<?=$host_path;?>assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="<?=$host_path;?>assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- PERFECT SCROLLBAR JS -->
+<script src="<?=$host_path;?>assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<!-- SELECT2 JS -->
+<script src="<?=$host_path;?>assets/plugins/select2/js/select2.min.js"></script>
+<script src="<?=$host_path;?>assets/js/select2.js"></script>
+<!-- COLOR THEME JS -->
+<script src="<?=$host_path;?>assets/js/themeColors.js"></script>
+<!-- CUSTOM JS -->
+<script src="<?=$host_path;?>assets/js/custom.js"></script>
+<!-- SWITCHER JS -->
+<script src="<?=$host_path;?>assets/switcher/js/switcher.js"></script>
+<!-- END SCRIPTS -->
+<script>
+
+$('#submit_signin').on('click', function () {
+
+//alert(222);
+    var admin_user=$('#admin_user').val();
+	var admin_pass=$('#admin_pass').val();
+
+
+
+         if(admin_user==''){
+			alert('Please enter username');
+			$('#admin_user').focus();
+			return false;
+		}else if(admin_pass==''){
+		    alert('Please enter password');
+			$('#admin_pass').focus();
+			return false;
+		}
+
+$(".submit_signin").html("<i class='fa-solid fa-spinner fa-spin-pulse'></i>");
+
+
+$.ajax({
+	url: "include/login.php",
+	data:'admin_user='+admin_user+'&admin_pass='+admin_pass,
+	type: "POST",
+	success:function(data){
+	  if(data==1){ 
+	  window.location.href = "<?=$host;?>";
+	  }else{
+	  data
+	  $("#loutmsg").hide();
+	  $("#wrongmsg").show();
+	  $("#actmsg").html(data);
+	  $(".submit_signin").html("Sign In");
+	  }
+	},
+	error:function (){}
+	});
+	
+	
+
+});
+
+
+</script>
+</body>
+</html>

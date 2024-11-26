@@ -1,0 +1,165 @@
+<?php include "include/common.php"; 
+
+$verify=decryption_value($_REQUEST['verify']);
+$utype=decryption_value($_REQUEST['utype']);
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Admin Dashboard - <?=$host_company;?></title>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+<meta name="description" content="Admin Dashboard - <?=$host_company;?>">
+<meta name="author" content="<?=$host_company;?>">
+<meta name="keywords" content="Admin Dashboard - <?=$host_company;?>">
+<?php include "include/meta-css.php"; ?>
+</head>
+<body class="ltr main-body leftmenu error-1">
+
+        <!-- SWITCHER -->
+        <!-- END PAGE -->
+        <div class="page main-signin-wrapper">
+			<!-- Row -->
+			<div class="row signpages text-center">
+				<div class="col-md-12">
+					<div class="card">
+						<div class="row row-sm">
+							<div class="col-lg-6 col-xl-5 d-none d-lg-block text-center bg-primary details">
+								<div class="mt-4 pt-5 p-2 pos-absolute">
+									<img src="<?=$host_path;?>assets/img/admin-logo.png" class="header-brand-img mb-4" alt="logo" style="height:40px !important;">
+              <div class="clearfix"></div>
+              <img src="<?=$host_path;?>assets/img/user.png" class="ht-100 mb-0" alt="user">
+              <h5 class="mt-4 text-white">Welcome to <?=$host_company;?> Web Manager</h5>
+              <span class="tx-white-6 tx-13 mb-5 mt-xl-0">For Support Email us -  <a href="mailto:<?=$host_email;?>" class="text-white"><?=$host_email;?></a></span> </div>
+							</div>
+							<div class="col-lg-6 col-xl-7 col-xs-12 col-sm-12 login_form ">
+								<div class="main-container container-fluid">
+									<div class="row row-sm">
+										<div class="card-body mt-2 mb-2">
+											<img 57 src="<?=$host_path;?>assets/img/admin-logo.png" class="d-lg-none header-brand-img text-start float-start mb-4 error-logo-light" alt="logo"> <img 58 src="<?=$host_path;?>assets/img/admin-logo-dark.png" class=" d-lg-none header-brand-img text-start float-start mb-4 error-logo" alt="logo" 
+				style="height: 50px;">
+											<div class="clearfix"></div>
+											<h5 class="text-start mb-2">Reset Your Password</h5>
+						<p class="mb-4 text-muted tx-13 ms-0 text-start">It's free to signup and only takes a minute.</p>
+									
+											<input type="hidden" id="uid" name="uid" value="<?=$verify;?>">
+												<div class="form-group text-start">
+													<label>User Name</label>
+<input class="form-control" name="n_username" id="n_username" placeholder="User Name" type="text" value="<?=$utype;?>" title="User Name" readonly>
+												</div>
+												<div class="form-group text-start">
+													<label>New Password</label>
+<input class="form-control" name="n_password" id="n_password" placeholder="Enter your New Password" type="password" title="New Password" required>
+												</div>
+												<div class="form-group text-start">
+													<label>Confirm Password</label>
+<input class="form-control" name="c_password"  id="c_password" placeholder="Enter your Confirm Password" type="password" title="Confirm Password" required>
+												</div>
+								<button class="btn btn-main-primary btn-block text-white" id="submit_reset">Reset Password</button>
+<a href="signin.html" class="alert alert-outline-success" role="alert" id="mbox" style="display:none;height:38px;margin-bottom:0px;padding-top:9px;"><strong>Password Reset Successfully - Click for Sign in</strong></a>
+
+<a class="alert alert-outline-danger" role="alert" id="fbox" style="display:none;height:38px;margin-bottom:0px;padding-top:9px;"><strong>Password Not Changed - Try Again</strong></a>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Row -->
+
+
+        </div>
+		<!-- END PAGE -->
+
+        <!-- SCRIPTS -->
+        		
+		<!-- JQUERY JS -->
+		<script src="<?=$host_path;?>assets/plugins/jquery/jquery.min.js"></script>
+
+		<!-- BOOTSTRAP JS -->
+		<script src="<?=$host_path;?>assets/plugins/bootstrap/js/popper.min.js"></script>
+		<script src="<?=$host_path;?>assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- PERFECT SCROLLBAR JS -->
+		<script src="<?=$host_path;?>assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+		<!-- SELECT2 JS -->
+		<script src="<?=$host_path;?>assets/plugins/select2/js/select2.min.js"></script>
+		<script src="<?=$host_path;?>assets/js/select2.js"></script>
+        
+
+        
+        <!-- COLOR THEME JS -->
+		<script src="<?=$host_path;?>assets/js/themeColors.js"></script>
+
+        <!-- CUSTOM JS -->
+        <script src="<?=$host_path;?>assets/js/custom.js"></script>
+
+        <!-- SWITCHER JS -->
+        <script src="<?=$host_path;?>assets/switcher/js/switcher.js"></script>
+
+        <!-- END SCRIPTS -->
+
+
+<script>
+
+$('#submit_reset').on('click', function () {
+
+    var n_username=$('#n_username').val();
+	var n_password=$('#n_password').val();
+	var c_password=$('#c_password').val();
+	var uid=$('#uid').val();
+
+         if(n_username==''){
+			alert('Please enter username');
+			$('#admin_user').focus();
+			return false;
+		}else if(n_password==''){
+			alert('Please enter New password');
+			$('#n_passwords').focus();
+			return false;
+		}else if(c_password==''){
+			alert('Please enter Confirm password');
+			$('#c_password').focus();
+			return false;
+		}else if(c_password!=n_password){
+			alert('New password and Confirm password Not Matched');
+			$('#c_password').focus();
+			return false;
+		}else if(c_password.length<6){
+         alert("password must be at least of 6 characters.");
+         $('#c_password').focus();
+         return false;
+        }
+
+$("#submit_reset").html("<i class='fa-solid fa-spinner fa-spin-pulse'></i>");
+
+
+$.ajax({
+	url: "include/update-password.php",
+	data:'admin_user='+n_username+'&n_password='+n_password+'&c_password='+c_password+'&uid='+uid,
+	type: "POST",
+	success:function(data){
+	  //alert(data);
+	  if(data==1){ 
+	  $("#submit_reset").hide();
+	  $("#mbox").show();
+	  }else{
+	  $("#submit_reset").html("Reset Password");
+	  $("#fbox").show();
+	  }
+	},
+	error:function (){}
+	});
+	
+	
+
+});
+
+
+</script>
+    </body>
+
+</html>

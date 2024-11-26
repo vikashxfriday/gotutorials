@@ -1,0 +1,168 @@
+<?php include "include/common.php"; 
+//echo signup-success
+$redirecturl=$host."signup-success.html";
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Admin Dashboard - <?=$host_company;?></title>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+<meta name="description" content="Admin Dashboard - <?=$host_company;?>">
+<meta name="author" content="<?=$host_company;?>">
+<meta name="keywords" content="Admin Dashboard - <?=$host_company;?>">
+<?php include "include/meta-css.php"; ?>
+</head>
+<body class="ltr main-body leftmenu error-1">
+<!-- SWITCHER -->
+<!-- END SWITCHER -->
+
+<!-- END PAGE -->
+<div class="page main-signin-wrapper">
+  <!-- Row -->
+  <div class="row signpages text-center">
+    <div class="col-md-12">
+		
+	<div class="alert alert-solid-danger mx-0" role="alert" id="wrongmsg" style="display:none">
+	<button aria-label="Close" class="btn-close" data-bs-dismiss="alert" type="button">
+	<span aria-hidden="true">&times;</span></button>
+	<strong><i class="fa-regular fa-circle-xmark"></i></strong> <span id="actmsg"></span> 
+   
+    </div>
+
+
+      <div class="card">
+        <div class="row row-sm">
+          <div class="col-lg-6 col-xl-5 d-none d-lg-block text-center bg-primary details">
+            <div class="mt-5 pt-4 p-2 pos-absolute"> <img src="<?=$host_path;?>assets/img/admin-logo.png" class="header-brand-img mb-4" alt="logo" style="height:40px !important;">
+              <div class="clearfix"></div>
+              <img src="<?=$host_path;?>assets/img/user.png" class="ht-100 mb-0" alt="user">
+              <h5 class="mt-4 text-white">Welcome to ITIO Web Manager</h5>
+              <span class="tx-white-6 tx-13 mb-5 mt-xl-0">For Support Email us -  <a href="mailto:<?=$host_email;?>" class="text-white"><?=$host_email;?></a></span> </div>
+			  
+          </div>
+          <div class="col-lg-6 col-xl-7 col-xs-12 col-sm-12 login_form ">
+            <div class="main-container container-fluid">
+              <div class="row row-sm">
+                <div class="card-body mt-2 mb-2"> <img 57 src="<?=$host_path;?>assets/img/admin-logo.png" class="d-lg-none header-brand-img text-start float-start mb-4 error-logo-light" alt="logo"> <img 58 src="<?=$host_path;?>assets/img/admin-logo-dark.png" class=" d-lg-none header-brand-img text-start float-start mb-4 error-logo" alt="logo" 
+				style="height: 50px;">
+                  <div class="clearfix"></div>
+                 
+                    <h5 class="text-start mb-2">Signup for Free</h5>
+                    <p class="mb-4 text-muted tx-13 ms-0 text-start" id="loader">Signup for Free
+It's free to signup and only takes a minute.</p>
+                    <div class="form-group text-start">
+                      <label>Name</label>
+<input name="admin_name" id="admin_name" class="form-control" placeholder="Enter your Full Name" type="text" title="Full Name" required>
+                    </div>
+					<div class="form-group text-start">
+                      <label>Email Address</label>
+             <input name="admin_email" id="admin_email" class="form-control" placeholder="Enter your Email Address" type="email" title="Email Address" required>
+                    </div>
+					<div class="form-group text-start">
+                      <label>Mobile Number</label>
+             <input name="admin_mobile" id="admin_mobile" class="form-control" placeholder="Enter your Mobile Number" type="text" title="Mobile Number" required>
+                    </div>
+					<div class="form-group text-start">
+                      <label>User Name</label>
+             <input name="admin_user" id="admin_user" class="form-control auto_remove_space" placeholder="Enter your User Name" type="text" title="User Name" required>
+                    </div>
+                    <button type="submit" id="submit_signup" class="btn btn-main-primary btn-block text-white">Create Account</button>
+                    <a class="btn btn-primary submit_enquiry_msg" style="display:none;"></a>
+                  <div class=" mt-5 ms-0">
+				   <div class="mb-1 float-start text-start w-100">Already have an account? <a href="signin.html">Sign In</a></div>
+                    
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Row -->
+</div>
+<!-- END PAGE -->
+<!-- SCRIPTS -->
+<!-- JQUERY JS -->
+<script src="<?=$host_path;?>assets/plugins/jquery/jquery.min.js"></script>
+<!-- BOOTSTRAP JS -->
+<script src="<?=$host_path;?>assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="<?=$host_path;?>assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- PERFECT SCROLLBAR JS -->
+<script src="<?=$host_path;?>assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<!-- SELECT2 JS -->
+<script src="<?=$host_path;?>assets/plugins/select2/js/select2.min.js"></script>
+<script src="<?=$host_path;?>assets/js/select2.js"></script>
+<!-- COLOR THEME JS -->
+<script src="<?=$host_path;?>assets/js/themeColors.js"></script>
+<!-- CUSTOM JS -->
+<script src="<?=$host_path;?>assets/js/custom.js"></script>
+<!-- SWITCHER JS -->
+<script src="<?=$host_path;?>assets/switcher/js/switcher.js"></script>
+<!-- END SCRIPTS -->
+<script>
+
+$('#submit_signup').on('click', function () {
+
+    var admin_name=$('#admin_name').val();
+	var admin_email=$('#admin_email').val();
+	var admin_mobile=$('#admin_mobile').val();
+	var admin_user=$('#admin_user').val();
+
+         if(admin_name==''){
+			alert('Please enter full name');
+			$('#admin_name').focus();
+			return false;
+		}else if(admin_email==''){
+		    alert('Please enter email address');
+			$('#admin_email').focus();
+			return false;
+		}else if(admin_mobile==''){
+		    alert('Please enter mobile number');
+			$('#admin_mobile').focus();
+			return false;
+		}else if(admin_user==''){
+		    alert('Please enter username');
+			$('#admin_user').focus();
+			return false;
+		}else if(admin_user.length<6){
+         alert("username must be at least of 6 characters.");
+         $('#admin_user').focus();
+         return false;
+        }
+
+$("#submit_signup").html("<i class='fa-solid fa-spinner fa-spin-pulse'></i>");
+
+
+$.ajax({
+	url: "include/signup.php",
+	data:'admin_name='+admin_name+'&admin_email='+admin_email+'&admin_mobile='+admin_mobile+'&admin_user='+admin_user,
+	type: "POST",
+	success:function(data){
+	  //alert(data);
+	  if(data==1){ 
+	  window.location.href = "<?=$redirecturl;?>";
+	  }else{
+	  $("#loutmsg").hide();
+	  $("#wrongmsg").show();
+	  $("#actmsg").html(data);
+	  $("#submit_signup").html("Create Account");
+	  }
+	},
+	error:function (){}
+	});
+	
+	
+
+});
+
+$('.auto_remove_space').on('keyup',function(e) {
+  $( this ).val($( this ).val().replace(/\s/g, ''));
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<?php include "include/common.php"; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Admin Dashboard - <?=$host_company;?></title>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+<meta name="description" content="Admin Dashboard - <?=$host_company;?>">
+<meta name="author" content="<?=$host_company;?>">
+<meta name="keywords" content="Admin Dashboard - <?=$host_company;?>">
+<? include "include/meta-css.php"; ?>
+</head>
+<body class="ltr main-body leftmenu error-1">
+
+
+
+        <div class="page main-signin-wrapper bg-primary br-0-f">
+        
+
+				<!-- Row -->
+				<div class="row signpages ext-center">
+					<div class="col-md-7 mx-auto">
+						<div class="card alert-message">
+							<div class="card-body">
+								<div class="text-center text-white">
+									<i class="fa-regular fa-circle-check fa-beat-fade text-success" style="font-size:100px;"></i>
+									<h3 class="mt-4 mb-3">Hi, <?=ucwords($_SESSION['registered_user_name']);?> </h3>
+									<h5 class="mt-4 mb-3">You have successfully registered with us</h5>
+									<p class="tx-18 text-white-50">Your account is login after activation. For Support Email us -  <a href="mailto:<?=$host_email;?>" class="text-white"><?=$host_email;?></a></p>
+									
+									<a href="signin.html" class="btn btn-success">Back to Login</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Row -->
+			
+
+        </div>
+		<!-- END PAGE -->
+
+        <!-- SCRIPTS -->
+        		
+<!-- JQUERY JS -->
+<script src="<?=$host_path;?>assets/plugins/jquery/jquery.min.js"></script>
+<!-- BOOTSTRAP JS -->
+<script src="<?=$host_path;?>assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="<?=$host_path;?>assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- PERFECT SCROLLBAR JS -->
+<script src="<?=$host_path;?>assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<!-- SELECT2 JS -->
+<script src="<?=$host_path;?>assets/plugins/select2/js/select2.min.js"></script>
+<script src="<?=$host_path;?>assets/js/select2.js"></script>
+<!-- COLOR THEME JS -->
+<script src="<?=$host_path;?>assets/js/themeColors.js"></script>
+<!-- CUSTOM JS -->
+<script src="<?=$host_path;?>assets/js/custom.js"></script>
+<!-- SWITCHER JS -->
+<script src="<?=$host_path;?>assets/switcher/js/switcher.js"></script>
+<!-- END SCRIPTS -->
+
+
+    </body>
+
+</html>
