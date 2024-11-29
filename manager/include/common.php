@@ -1,7 +1,7 @@
 <?php
 ob_start();
 session_start();
-error_reporting( E_ALL );
+//error_reporting( E_ALL );
 $dir_path=str_replace("include","",dirname(__FILE__));
 
 $serverip = array('127.0.0.1', "::1");
