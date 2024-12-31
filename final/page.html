@@ -1,0 +1,511 @@
+<?php 
+$host = "https://gotutorials.in";
+?>
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>Go Tutorials</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Place favicon.ico in the root directory -->
+   <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+
+   <!-- CSS here  -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <link rel="stylesheet" href="<?=$host;?>/assets/css/meanmenu.css">
+   <link rel="stylesheet" href="<?=$host;?>/assets/css/animate.css">
+   <link rel="stylesheet" href="<?=$host;?>/assets/css/slick.css">
+   <link rel="stylesheet" href="<?=$host;?>/assets/css/magnific-popup.css">
+   <link rel="stylesheet" href="<?=$host;?>/assets/css/nice-select.css">
+ 
+   <script src="https://kit.fontawesome.com/40557bfa75.js" crossorigin="anonymous"></script>
+   
+   <link rel="stylesheet" href="<?=$host;?>/assets/css/elegent-icons.css">
+   <link rel="stylesheet" href="<?=$host;?>/assets/css/spacing.css">
+   <link rel="stylesheet" href="<?=$host;?>/assets/css/main.css">
+   <!-- css end  here-->
+   <style>
+   .tp-feature__icon { margin-bottom: 10px !important;}
+   .img-height{ height: 100px !important;}
+   .h-75 { height: 75px !important;}
+
+   </style>
+</head>
+
+<body>
+
+
+    <!-- back to top start -->
+    <button class="tp-backtotop">
+      <span><i class="fa-solid fa-angles-up"></i></span>
+   </button>
+   <!-- back to top end -->
+ 
+ 
+   <!-- header area start -->
+   <header>
+      <div class="tp-header__area tp-header__transparent">
+         <div class="tp-header__main header-sticky" id="header-sticky">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-6">
+                     <div class="logo has-border">
+                        <a href="index.html">
+                           <img src="<?=$host;?>/assets/img/logo/go-logo.png" alt="logo" >
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-xxl-8 col-xl-8 col-lg-8 d-none d-lg-block">
+                     <div class="main-menu">
+                        <nav id="mobile-menu">
+                           <ul>
+                              <li class="has-dropdown">
+                                 <a href="index">Languages</a>
+                                 <ul class="submenu">
+                                    <li><a href="/Golang">Golang</a></li>
+                                    <li><a href="/PHP">PHP</a></li>
+                                 </ul>
+                              </li>
+                              
+                              <li class="has-dropdown">
+                                 <a href="Web Technologies">Web Technologies</a>
+                                 <ul class="submenu">
+<li><a href="/HTML">HTML</a></li>
+<li><a href="/CSS">CSS</a></li>
+<li><a href="/JavaScript">JavaScript</a></li>
+<li><a href="/TypeScript">TypeScript</a></li>
+<li><a href="/ReactJS">ReactJS</a></li>
+<li><a href="/NextJS">NextJS</a></li>
+<li><a href="/NodeJs">NodeJs</a></li>
+<li><a href="/Bootstrap">Bootstrap</a></li>
+
+                                 </ul>
+                              </li>
+                              <li class="has-dropdown">
+                                 <a href="#">DevOps</a>
+                                 <ul class="submenu">
+                                    <li><a href="/Git">Git</a></li>
+                                    <li><a href="/AWS">AWS</a></li>
+                                    <li><a href="/Docker">Docker</a></li>
+                                    <li><a href="/Kubernetes">Kubernetes</a></li>
+                                    <li><a href="/Azure">Azure</a></li>
+                                    <li><a href="/GCP">GCP</a></li>
+                                    
+                                 </ul>
+                              </li>
+                              <li class="has-dropdown">
+                                 <a href="">Databases</a>
+                                 <ul class="submenu">
+                                    <li><a href="/SQL/">SQL</a></li>
+                                    <li><a href="/MYSQL/">MYSQL</a></li>
+									<li><a href="/PostgreSQL/">PostgreSQL</a></li>
+                                    <li><a href="/MongoDB/">MongoDB</a></li>
+									<li><a href="/PLSQL/">PL/SQL</a></li>
+                                 </ul>
+                              </li>
+							  <li class="has-dropdown">
+                                 <a href="">Databases</a>
+                                 <ul class="submenu">
+                                    <li><a href="/SQL/">SQL</a></li>
+                                    <li><a href="/MYSQL/">MYSQL</a></li>
+									<li><a href="/PostgreSQL/">PostgreSQL</a></li>
+                                    <li><a href="/MongoDB/">MongoDB</a></li>
+									<li><a href="/PLSQL/">PL/SQL</a></li>
+                                 </ul>
+                              </li>
+							  
+							  
+                              
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+                  <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-6">
+                     <div class="tp-header__main-right d-flex justify-content-end align-items-center pl-30">
+                        <div class="header-acttion-btns d-flex align-items-center d-none d-md-flex"></a>
+                           <a href="/Interviews-Questions/" class="tp-btn br-0">
+                              <span>Interviews<i class="fa-solid fa-arrow-right"></i> </span>
+                              <div class="transition"></div>
+                           </a>
+                        </div>
+                        <div class="tp-header__hamburger ml-50 d-lg-none">
+                           <button class="hamburger-btn offcanvas-open-btn">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- header area end -->
+
+   <!-- offcanvas area start -->
+   <div class="offcanvas__area" >
+      <div class="offcanvas__wrapper">
+         <div class="offcanvas__content">
+            <div class="offcanvas__close text-end">
+               <button class="offcanvas__close-btn offcanvas-close-btn">
+                  <i class="fa fa-times"></i>
+               </button>
+            </div>
+            <div class="offcanvas__top mb-40">
+               <div class="offcanvas__subtitle">
+                  <span class="text-white d-inline-block mb-25 d-none d-lg-block">ELEVATE YOUR BUSINESS WITH</span>
+               </div>
+               <div class="offcanvas__logo mb-40">
+                  <a href="index-2.html">
+                     <img src="<?=$host;?>/assets/img/logo/go-logo.png" alt="logo">
+                  </a>
+               </div>
+               <div class="offcanvas-info d-none d-lg-block">
+                  <p>Limitless customization options & Elementor compatibility let anyone create a beautiful website
+                     with Valiance. </p>
+               </div>
+               <div class="offcanvas__btn d-none d-lg-block">
+                  <a href="contact.html" class="tp-btn">Contact us <span></span></a>
+               </div>
+            </div>
+            <div class="mobile-menu fix mb-40"></div>
+
+
+            <div class="offcamvas__bottom">
+               <div class="offcanvas__cta mt-30 mb-20">
+                  <h3 class="offcanvas__cta-title">Contact info</h3>
+                  <span>27 Division St, New York,</span>
+                  <span>+154 4808 84082 4830</span>
+                  <span><a href="#" class="__cf_email__" data-cfemail="63101613130c1117230d0c1b0a024d000c0e">[email&#160;protected]</a></span>
+                  <span>Office Hours: 8AM - 5PM</span>
+                  <span>Sunday - Wekend Day</span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="body-overlay"></div>
+   <!-- offcanvas area end -->
+
+   <main>
+      
+      <!-- service area start  -->
+      <div class="tp-feature__section pt-120 pb-30">
+         <div class="container">
+            <div class="row">
+               <div class="col-xxl-8">
+                  <div class="postbox__wrapper pr-30">
+                     <article class="postbox__item format-image mb-50 transition-3">
+                        <div class="postbox__thumb m-img">
+                              <img src="assets/img/blog/blog-big-1.jpg" alt="">
+                        </div>
+                        <div class="postbox__content">
+                           <div class="postbox__meta">
+                              <span><i class="far fa-calendar-check"></i> July 21, 2020 </span>
+                              <span><a href="#"><i class="far fa-user"></i> Admin</a></span>
+                              <span><a href="#"><i class="far fa-comments"></i> 02 Comments</a></span>
+                           </div>
+                           <h3 class="postbox__title">The Challenge Of Global Learning In Public Education</h3>
+                           <div class="postbox__text">
+                              <p>Nancy boy Charles down the pub get stuffed mate easy peasy brown bread car boot squiffy
+                                 loo, blimey arse over tit it's your round cup of char horse play chimney pot old. Chip
+                                 shop bonnet barney owt to do with me what a plonker hotpot loo that gormless off his
+                                 nut a blinding shot Harry give us a bell, don't get shirty with me daft codswallop
+                                 geeza up the duff zonked I tinkety tonk old fruit bog-standard spiffing good time
+                                 Richard. Are you taking the piss young delinquent wellies absolutely bladdered the BBC
+                                 Eaton my good sir, cup of tea spiffing bleeder David mufty you mug <span>cor blimey
+                                    guvnor, burke bog-standard brown</span> bread wind up barney. Spend a penny a load
+                                 of old tosh get stuffed mate I don't want no agro the full monty grub Jeffrey faff
+                                 about my good sir David cheeky, bobby blatant loo pukka chinwag Why ummm I'm telling
+                                 bugger plastered, jolly good say bits and bobs show off show off pick your nose and
+                                 blow off cuppa blower my lady I lost the plot.</p>
+
+                              <blockquote>
+                                 <p>Tosser argy-bargy mush loo at public school Elizabeth up the duff buggered chinwag
+                                    on your bike mate don't get shirty with me super, Jeffrey bobby Richard cheesed off
+                                    spend a penny a load of old tosh blag horse.</p><cite>Samrat Islam Tushar</cite>
+                              </blockquote>
+
+                              <p><img src="assets/img/blog/blog-big-2.jpg" alt=""></p>
+
+                              <h3>Build a beautiful website with Quillow</h3>
+
+                              <p>Are you taking the piss young delinquent wellies absolutely bladdered the Eaton my good
+                                 sir, cup of tea spiffing bleeder David mufty you mug cor blimey guvnor, burke
+                                 bog-standard brown bread wind up barney. Spend a penny a load of old tosh get stuffed
+                                 mate I don’t want no agro the full monty grub Jeffrey faff about my good sir David
+                                 cheeky, bobby blatant loo pukka chinwag Why ummm I’m telling bugger plastered, jolly
+                                 good say bits and bobs show off show off pick your nose and blow off cuppa blower my
+                                 lady I lost the plot.</p>
+
+                              <p>Cheeky bugger cracking goal starkers lemon squeezy lost the plot pardon me no biggie
+                                 the BBC burke gosh boot so I said wellies, zonked a load of old tosh bodge barmy skive
+                                 off he legged it morish spend a penny my good sir wind up hunky-dory. Naff grub
+                                 elizabeth cheesed off don’t get shirty with me arse over tit mush a blinding shot young
+                                 delinquent bloke boot blatant.</p>
+                           </div>
+
+                           <div class="postbox__tag tagcloud">
+                              <span>Post Tags :</span>
+                              <a href="#">Fresh</a>
+                              <a href="index.html">Home</a>
+                              <a href="#">Kitchen</a>
+                           </div>
+                        </div>
+                     </article>
+                     <div class="postbox__comment mb-65">
+                        <h3 class="postbox__comment-title">3 Comments</h3>
+                        <ul>
+                           <li>
+                              <div class="postbox__comment-box grey-bg-2">
+                                 <div class="postbox__comment-info d-flex">
+                                    <div class="postbox__comment-avater mr-20">
+                                       <img src="assets/img/testimonial/avata-lg-5.png" alt="">
+                                    </div>
+                                    <div class="postbox__comment-name">
+                                       <h5>Eleanor Fant</h5>
+                                       <span class="post-meta"> July 14, 2022</span>
+                                    </div>
+                                 </div>
+                                 <div class="postbox__comment-text ml-65">
+                                    <p>So I said lurgy dropped a clanger Jeffrey bugger cuppa gosh David blatant have
+                                       it, standard A bit of how's your father my lady absolutely.</p>
+                                    <div class="postbox__comment-reply">
+                                       <a href="#">Reply</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="children">
+                              <div class="postbox__comment-box grey-bg-2">
+                                 <div class="postbox__comment-info d-flex">
+                                    <div class="postbox__comment-avater mr-20">
+                                       <img src="assets/img/testimonial/avata-lg-3.png" alt="">
+                                    </div>
+                                    <div class="postbox__comment-name">
+                                       <h5>Eleanor Fant</h5>
+                                       <span class="post-meta"> July 14, 2022</span>
+                                    </div>
+                                 </div>
+                                 <div class="postbox__comment-text ml-65">
+                                    <p>So I said lurgy dropped a clanger Jeffrey bugger cuppa gosh David blatant have
+                                       it, standard A bit of how's your father my lady absolutely.</p>
+                                    <div class="postbox__comment-reply">
+                                       <a href="#">Reply</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="postbox__comment-box grey-bg-2">
+                                 <div class="postbox__comment-info d-flex">
+                                    <div class="postbox__comment-avater mr-20">
+                                       <img src="assets/img/testimonial/avata-lg-2.png" alt="">
+                                    </div>
+                                    <div class="postbox__comment-name">
+                                       <h5>Eleanor Fant</h5>
+                                       <span class="post-meta"> July 14, 2022</span>
+                                    </div>
+                                 </div>
+                                 <div class="postbox__comment-text ml-65">
+                                    <p>So I said lurgy dropped a clanger Jeffrey bugger cuppa gosh David blatant have
+                                       it, standard A bit of how's your father my lady absolutely.</p>
+                                    <div class="postbox__comment-reply">
+                                       <a href="#">Reply</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="postbox__comment-form">
+                        <h3 class="postbox__comment-form-title">Write a comment</h3>
+                        <form action="#">
+                           <div class="row">
+                              <div class="col-xxl-6 col-xl-6 col-lg-6">
+                                 <div class="postbox__comment-input">
+                                    <input type="text" placeholder="Your Name">
+                                 </div>
+                              </div>
+                              <div class="col-xxl-6 col-xl-6 col-lg-6">
+                                 <div class="postbox__comment-input">
+                                    <input type="email" placeholder="Your Email">
+                                 </div>
+                              </div>
+                              <div class="col-xxl-12">
+                                 <div class="postbox__comment-input">
+                                    <input type="text" placeholder="Website">
+                                 </div>
+                              </div>
+                              <div class="col-xxl-12">
+                                 <div class="postbox__comment-input">
+                                    <textarea placeholder="Enter your comment ..."></textarea>
+                                 </div>
+                              </div>
+                              <div class="col-xxl-12">
+                                 <div class="postbox__comment-agree d-flex align-items-start mb-20">
+                                    <input class="e-check-input" type="checkbox" id="e-agree">
+                                    <label class="e-check-label" for="e-agree">Save my name, email, and website in this
+                                       browser for the next time I comment.</label>
+                                 </div>
+                              </div>
+                              <div class="col-xxl-12">
+                                 <div class="postbox__comment-btn p-relative z-index-1">
+                                    <button type="submit" class="tp-btn"><span>Post Comment</span></button>
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-12">
+                  <div class="sidebar__wrapper pl-20">
+                     <div class="sidebar__widget mb-40">
+                        <div class="sidebar__widget-content">
+                           <div class="sidebar__search">
+                              <form action="#">
+                                 <div class="sidebar__search-input-2">
+                                    <input type="text" placeholder="Search">
+                                    <button type="submit"><i class="far fa-search"></i></button>
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="sidebar__widget mb-40">
+                        <h3 class="sidebar__widget-title">Categories</h3>
+                        <div class="sidebar__widget-content">
+                           <ul>
+                              <li><a href="blog.html">Web Design</a> <span>03</span></li>
+                              <li><a href="blog.html">Branding Design</a> <span>07</span></li>
+                              <li><a href="blog.html">Photography </a> <span>09</span></li>
+                              <li><a href="blog.html">Business Statergy <span>01</span></a></li>
+                              <li><a href="blog.html">UI/UX Deisgn</a> <span>00</span></li>
+                              <li><a href="blog.html">Web Development</a> <span>26</span></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="sidebar__widget mb-40">
+                        <h3 class="sidebar__widget-title">pages</h3>
+                        <div class="sidebar__widget-content wd-hide-border">
+                           <ul>
+                              <li><a href="blog.html">Web Design</a> </li>
+                              <li><a href="blog.html">Branding Design </a></li>
+                              <li><a href="blog.html">Photography </a> </li>
+                              <li><a href="blog.html">Business Statergy</a></li>
+                              <li><a href="blog.html">UI/UX Deisgn</a></li>
+                              <li><a href="blog.html">Web Development</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="sidebar__widget mb-40">
+                        <h3 class="sidebar__widget-title">Recent Post</h3>
+                        <div class="sidebar__widget-content">
+                           <div class="sidebar__post rc__post">
+                              <div class="rc__post mb-20 d-flex align-items-center">
+                                 <div class="rc__post-thumb mr-20">
+                                    <a href="blog-details.html"><img src="assets/img/blog/blog-big-1.jpg" alt=""></a>
+                                 </div>
+                                 <div class="rc__post-content">
+                                    <div class="rc__meta">
+                                       <span>4 March. 2022</span>
+                                    </div>
+                                    <h3 class="rc__post-title">
+                                       <a href="blog-details.html">Don’t Underestimate The Software Administration UX</a>
+                                    </h3>
+         
+                                 </div>
+                              </div>
+                              <div class="rc__post mb-20 d-flex align-items-center">
+                                 <div class="rc__post-thumb mr-20">
+                                    <a href="blog-details.html"><img src="assets/img/blog/blog-big-2.jpg" alt=""></a>
+                                 </div>
+                                 <div class="rc__post-content">
+                                    <div class="rc__meta">
+                                       <span>4 March. 2022</span>
+                                    </div>
+                                    <h3 class="rc__post-title">
+                                       <a href="blog-details.html">Designing Human-Machine Interfaces..</a>
+                                    </h3>
+         
+                                 </div>
+                              </div>
+                              <div class="rc__post mb-20 d-flex align-items-center">
+                                 <div class="rc__post-thumb mr-20">
+                                    <a href="blog-details.html"><img src="assets/img/blog//blog-big-3.jpg" alt=""></a>
+                                 </div>
+                                 <div class="rc__post-content">
+                                    <div class="rc__meta">
+                                       <span>4 March. 2022</span>
+                                    </div>
+                                    <h3 class="rc__post-title">
+                                       <a href="blog-details.html">Web Design Done Well: Excellent Editorial</a>
+                                    </h3>
+         
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="sidebar__widget mb-40">
+                        <h3 class="sidebar__widget-title">Popular Tag</h3>
+                        <div class="sidebar__widget-content">
+                           <div class="tagcloud">
+                              <a href="#">business</a>
+                              <a href="#">clean</a>
+                              <a href="#">consult</a>
+                              <a href="#">desgin</a>
+                              <a href="#">keyboard</a>
+                              <a href="#">kit</a>
+                              <a href="#">mouse</a>
+                              <a href="#">Popular</a>
+                              <a href="#">room</a>
+                              <a href="#">tech</a>
+                              <a href="#">usability</a>
+                              <a href="#">ux</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- service area end  -->
+
+
+
+
+ 
+
+   </main>
+
+<?php include "footer.html";?>
+
+   <!-- JS here -->
+   <script src="assets/js/vendor/jquery.js"></script>
+   <script src="<?=$host;?>/assets/js/vendor/waypoints.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+   <script src="<?=$host;?>/assets/js/meanmenu.js"></script>
+   <script src="<?=$host;?>/assets/js/slick.js"></script>
+   <script src="<?=$host;?>/assets/js/magnific-popup.js"></script>
+   <script src="<?=$host;?>/assets/js/parallax.js"></script>
+   <script src="<?=$host;?>/assets/js/nice-select.js"></script>
+   <script src="<?=$host;?>/assets/js/counterup.js"></script>
+   <script src="<?=$host;?>/assets/js/wow.js"></script>
+   <script src="<?=$host;?>/assets/js/isotope-pkgd.js"></script>
+   <script src="<?=$host;?>/assets/js/imagesloaded-pkgd.js"></script>
+   <script src="<?=$host;?>/assets/js/ajax-form.js"></script> 
+   <script src="assets/js/countdown.js"></script>
+   <script src="<?=$host;?>/assets/js/main.js"></script>
+</body>
+
+</html>
